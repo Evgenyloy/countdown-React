@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0; /* border: 0; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: url(../public/ng.jpg) center no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container {
+  padding-top: 400px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgb(219, 228, 236);
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-family: Roboto, sans-serif;
+  font-size: 107px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  height: 107px;
+}
+
+.main-title {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 700;
+}
+
+.change {
+  font-size: 18px;
+  padding: 8px 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(156, 155, 155, 0.3);
+  align-self: center;
+  color: rgba(156, 155, 155, 0.3);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.change:hover {
+  border: 1px solid rgb(156, 155, 155);
+  color: rgb(156, 155, 155);
+}
+
+.countdown {
+  /* background-color: rgba(115, 115, 134, 0.5) ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.countdown__number-title {
+  font-size: 23px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.countdown__number-second {
+  color: #ee5486;
+}
